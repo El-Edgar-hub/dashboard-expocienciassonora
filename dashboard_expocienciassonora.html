@@ -818,11 +818,6 @@
         ];
 
         // Cargar métricas
-        document.getElementById('current-date').textContent = new Date().toLocaleDateString('es-MX', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        });
 
         // Gráfico de Categorías (Donut)
         const categoryLabels = Object.keys(data.categories).map(k => k.substring(0, 20) + '...');
