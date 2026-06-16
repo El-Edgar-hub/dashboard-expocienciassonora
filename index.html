@@ -38,10 +38,12 @@
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
+        }
+
+        .header-emoji {
+            font-size: 1.4em;
+            display: block;
+            margin-bottom: 6px;
         }
 
         .header p {
@@ -294,10 +296,28 @@
         /* Footer */
         .footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px 20px;
             color: #666;
             font-size: 0.9em;
             margin-top: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 16px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer p {
+            color: #888;
+            font-size: 0.85em;
+            margin-top: 8px;
         }
 
         /* Resumen ejecutivo */
@@ -470,7 +490,7 @@
     <div class="container">
         <!-- Encabezado -->
         <div class="header">
-            <h1>🔬 ExpoCiencias Sonora 2026</h1>
+            <h1><span class="header-emoji">🔬</span>ExpoCiencias Sonora 2026</h1>
             <p>10ª Edición • Dashboard de Registros de Proyectos Científicos</p>
         </div>
 
