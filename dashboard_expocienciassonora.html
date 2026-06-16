@@ -344,42 +344,103 @@
 
         /* Responsivo */
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.8em;
+            body {
+                padding: 12px;
             }
 
-            .chart-container {
-                height: 300px;
-            }
-
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .metrics-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
             .header {
-                padding: 25px 15px;
+                padding: 20px 15px;
+                margin-bottom: 16px;
             }
 
             .header h1 {
                 font-size: 1.5em;
+                gap: 8px;
+            }
+
+            .header p {
+                font-size: 0.95em;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+                margin-bottom: 16px;
+            }
+
+            .metric-header {
+                font-size: 0.85em;
+                padding: 10px 12px;
             }
 
             .metric-value {
                 font-size: 2em;
+                padding: 16px 10px;
             }
 
-            .metrics-grid {
+            .content-grid {
                 grid-template-columns: 1fr;
+                gap: 16px;
             }
 
             .chart-card {
-                padding: 15px;
+                padding: 16px;
+            }
+
+            .chart-container {
+                height: 260px;
+            }
+
+            .chart-card h3 {
+                font-size: 1.1em;
+                margin-bottom: 14px;
+            }
+
+            .municipalities-table th,
+            .municipalities-table td,
+            .schools-table th,
+            .schools-table td,
+            .evaluators-table th,
+            .evaluators-table td {
+                padding: 9px 8px;
+                font-size: 0.9em;
+            }
+
+            .winners-table th,
+            .winners-table td {
+                padding: 8px 6px;
+                font-size: 0.82em;
+            }
+
+            .prize-badge {
+                font-size: 0.75em;
+                padding: 4px 8px;
+                min-width: 90px;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .footer img {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.3em;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .metric-value {
+                font-size: 1.8em;
+            }
+
+            .chart-container {
+                height: 230px;
             }
         }
 
